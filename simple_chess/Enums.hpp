@@ -1,0 +1,37 @@
+﻿#pragma once
+
+enum Input_Indexes {
+	FIGURE_INDEX = 0,
+	WHITESPACE_INDEX,
+	LETTER_COORD_INDEX,
+	NUMBER_COORD_INDEX_1,
+	NUMBER_COORD_INDEX_2
+};
+
+enum Directions {
+	LEFT = 0,
+	DOWN,
+	RIGHT,
+	UP
+};
+
+enum Options {
+	NEW_GAME = '1',
+	CHANGE_BOARD_SIZE = '2',
+	EXIT_GAME = '3'
+};
+
+enum Board_Pieces {
+	TOP_LEFT_CORNER = 201, // ╔
+	TOP_RIGHT_CORNER = 187, // ╗
+	BOT_LEFT_CORNER = 200, // ╚
+	BOT_RIGHT_CORNER = 188, // ╝
+	VERTICAL_LEFT_CONNECTOR = 185, // ╣
+	VERTICAL_RIGHT_CONNECTOR = 204, // ╠
+	HORIZONTAL_UP_CONNECTOR = 202, // ╩
+	HORIZONTAL_DOWN_CONNECTOR = 203, // ╦
+	FOUR_WAY_CONNECTOR = 206, // ╬
+	VERTICAL_PIPE = 186, // ║
+	HORIZONTAL_PIPE = 205, // ═
+	WHITESPACE = 32	 // ' '
+};
